@@ -2,12 +2,6 @@
  * #style.css
 \*-----------------------------------*/
 
-/**
- * copyright 2022 codewithsadee
- */
-
-
-
 
 
 /*-----------------------------------*\
@@ -15,6 +9,8 @@
 \*-----------------------------------*/
 
 @import url("assets/css/header.css");
+@import url("assets/css/popular.css");
+@import url("assets/css/package.css");
 
 :root {
 
