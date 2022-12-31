@@ -1,0 +1,129 @@
+/*-----------------------------------*\
+ * #MEDIA QUERIES
+\*-----------------------------------*/
+
+/**
+ * responsive for larger than 580px screen
+ */
+
+@media(min-width: 580px) {
+    /**
+   * REUSED STYLE
+   */
+
+    .container {
+        max-width: 580px;
+        margin-inline: auto;
+    }
+
+    .btn {
+        --fs-5: 16px;
+        --padding: 12px 30px;
+    }
+
+    section:not(.cta) :is(.section-subtitle, .section-title, .section-text) {
+        text-align: center;
+    }
+
+    .section-text {
+        margin-bottom: 40px;
+    }
+
+    .card-text {
+        --fs-5: 15px;
+    }
+
+    /*header*/
+
+    .header {
+        padding-top: 83px;
+    }
+
+    .helpline-box .icon-box {
+        padding: 14px;
+    }
+
+    .header-top .logo img {
+        max-width: unset;
+    }
+
+    .search-btn {
+        font-size: 30px;
+    }
+
+    .nav-open-btn {
+        font-size: 40px;
+    }
+
+    .header .btn {
+        --fs-5: 14px;
+        --padding: 6px 20px;
+    }
+
+    /**
+   * HERO
+   */
+
+    .hero {
+        min-height: 800px;
+        padding-top: 85px;
+    }
+
+    .hero-text {
+        --fs-5: 15px;
+    }
+
+    .btn-group {
+        gap: 20px;
+    }
+
+    /**
+   * TOUR SEARCH
+   */
+
+    .tour-search-form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: flex-end;
+        gap: 15px;
+    }
+
+    .tour-search-form .input-wrapper {
+        margin-bottom: 0;
+    }
+
+    .tour-search-form .input-field {
+        padding: 16px 20px;
+    }
+
+    .tour-search .btn {
+        grid-column: span 2;
+        margin-top: 20px;
+    }
+
+    /**
+   * POPULAR
+   */
+
+    .popular-card .card-content {
+        right: auto;
+    }
+
+    /**
+   * FOOTER
+   */
+
+    .footer .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+
+    .footer-form { grid-column: span 2;}
+
+    .footer-bottom { text-align: left;}
+
+    .copyright { margin-bottom: 0;}
+
+    .footer-bottom-list { justify-content: flex-end;}
+}
