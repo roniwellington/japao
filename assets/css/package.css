@@ -141,3 +141,18 @@
     height: 100%;
     object-fit: cover;
 }
+
+/*-----------------------------------*\
+ * #CTA
+\*-----------------------------------*/
+
+.cta {
+    background: var(--bright-navy-blue);
+    padding-block: var(--section-padding);
+}
+
+.cta :is(.section-subtitle, .section-title, .section-text) {
+    color: var(--white);
+}
+
+.cta .section-text { font-size: var(--fs-5);}
