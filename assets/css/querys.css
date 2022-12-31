@@ -178,11 +178,286 @@
         gap: 10px;
     }
 
-    .helpline-box {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
+    .helpline-box .wrapper {
+        display: block;
+        color: var(--white);
+        font-size: var(--fs-6);
+    }
+
+    .social-list {
         gap: 10px;
     }
 
+    /**
+   * POPULAR
+   */
+
+    .popular-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+        margin-bottom: 50px;
+    }
+
+    .popular-list>li:not(:last-child) {
+        margin-bottom: 0;
+    }
+
+    .popular-card .card-content {
+        right: 20px;
+    }
+
+
+    /**
+   * PACKAGE
+   */
+
+    .package-list {
+        margin-bottom: 50px;
+    }
+
+    .package-list>li:not(:last-child) {
+        margin-bottom: 40px;
+    }
+
+    .package-card {
+        display: grid;
+        grid-template-columns: 1.3fr 1.5fr 1fr;
+    }
+
+    .package-card .card-banner {
+        height: 100%;
+    }
+
+    .package-card .card-price {
+        display: grid;
+        place-content: center;
+    }
+
+    .package-card .card-price .wrapper {
+        margin-bottom: 15px;
+    }
+
+    /**
+       * GALLERY
+       */
+
+    .gallery {
+        padding-bottom: calc(var(--section-padding * 2));
+    }
+
+    .gallery-list {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .gallery-image {
+        border-radius: var(--radius-25);
+    }
+
+    /**
+   * CTA
+   */
+
+    .cta .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .cta-content {
+        width: calc(100% - 225px);
+    }
+
+    .cta .section-text {
+        margin-inline: 0;
+    }
+
+    /**
+   * FOOTER
+   */
+
+    .form-wrapper {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .footer-form .input-field {
+        margin-bottom: 0;
+    }
+
+    .footer-form .btn {
+        width: max-content;
+    }
+
 }
+
+/**
+ * responsive for larger than 992px screen
+ */
+
+@media (min-width: 992px) {
+    /**
+   * REUSED STYLE
+   */
+
+    .container {
+        max-width: 1050px;
+    }
+
+    /**
+   * HEADER
+   */
+
+    .header.active .header-top {
+        position: unset;
+        background: unset;
+    }
+
+    .nav-open-btn,
+    .navbar-top {
+        display: none;
+    }
+
+    .header-bottom {
+        border-bottom: none;
+    }
+
+    .header.active .header-bottom {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: var(--white);
+        color: var(--onyx);
+        box-shadow: 0 2px 5px hsla(0, 0%, 0%, 0.08);
+        transition: var(--transition);
+    }
+
+    .header-bottom .container {
+        padding-block: 0;
+    }
+
+    .header .navbar {
+        all: unset;
+    }
+
+    .navbar-list {
+        border-top: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navbar-list li {
+        border-bottom: none;
+    }
+
+    .navbar-link {
+        color: var(--white);
+        --fs-4: 16px;
+        font-weight: unset;
+        text-transform: uppercase;
+        padding: 20px 15px;
+    }
+
+    .header.active .navbar-link {
+        color: var(--onyx);
+    }
+
+    .header.active .navbar-link:is(:hover, :focus) {
+        color: var(--bright-navy-blue);
+    }
+
+    .header.active .social-link {
+        color: var(--onyx);
+        border-color: hsla(0, 0%, 0%, 0.15);
+    }
+
+    .overlay {
+        display: none;
+    }
+
+    /**
+   * HERO
+   */
+
+    .hero .container {
+        max-width: 740px;
+    }
+
+    /**
+   * TOUR SEARCH
+   */
+
+    .tour-search-form {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .tour-search .btn {
+        --padding: 15px;
+        grid-column: unset;
+        margin-top: 0;
+    }
+
+    /**
+   * POPULAR
+   */
+
+   .popular-list { grid-template-columns: repeat(3, 1fr);}
+
+    /**
+   * PACKAGE
+   */
+
+   .meta-box { --fs-8: 13px;}
+
+   .meta-box > ion-icon { font-size: 15px;}
+
+   /**
+   * CTA 
+   */
+
+   .cta .section-title { max-width: 25ch;}
+
+   
+  /**
+   * FOOTER
+   */
+
+   .footer-form { grid-column: unset;}
+
+   .form-wrapper { flex-direction: column;}
+
+   .footer-form .btn {width: 100%;}
+}
+
+/**
+ * responsive for larger than 1200px screen
+ */
+
+ @media (min-width: 1200px) {
+     /**
+   * CUSTOM PROPERTY
+   */
+
+  :root {
+
+    /**
+     * spacing
+     */
+
+    --section-padding: 100px;
+
+  }
+
+  /**
+   * REUSED STYLE
+   */
+
+   .container { max-width: 1180px;}
+
+
+ }
